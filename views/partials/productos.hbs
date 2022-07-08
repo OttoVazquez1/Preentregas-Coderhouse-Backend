@@ -1,0 +1,22 @@
+<div>
+    <h1>Productos</h1>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Foto</th>
+        </tr>
+        {{#each productos}}
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>{{this.precio}}</td>
+                <td>{{this.thumbnail}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
+<div>
+    <a href="/">Volver</a>
+</div>
